@@ -475,6 +475,11 @@ section {
 
 #projects {
     position: relative;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    scroll-margin-top: 2rem;
 }
 
 .color-container {
@@ -505,5 +510,219 @@ section {
   border-radius: 10px;
 }
 
+#projects .about-containers {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+#projects .details-container {
+  min-width: 0;
+}
 
+/* CERTIFICATES SECTION */
+
+#certificates {
+  position: relative;
+  display: block;
+  height: auto;
+  min-height: 96vh;
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  background: rgb(250, 250, 250);
+}
+
+#certificates .title {
+  margin-bottom: 2rem;
+}
+
+.certificate-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.certificate-card {
+  padding: 1.5rem;
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 1.5rem;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 8px 22px rgba(32, 41, 50, 0.08);
+}
+
+.certificate-placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 230px;
+  border: 2px dashed rgb(163, 163, 163);
+  border-radius: 1rem;
+  color: rgb(85, 85, 85);
+  background: rgb(250, 250, 250);
+}
+
+.certificate-title {
+  margin-top: 1.25rem;
+  font-size: 1.3rem;
+}
+
+.certificate-card p {
+  margin-top: 0.4rem;
+}
+
+/* SKILLS SECTION */
+
+#skills {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+    scroll-margin-top: 2rem;
+    height: auto;
+    min-height: 96vh;
+    padding: 4rem 2rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    background: linear-gradient(145deg, #fafafa 0%, #f1f4f7 100%);
+}
+
+#skills .title {
+    margin-bottom: 2rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.skills-card {
+    position: relative;
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #e0e3e7;
+    border-radius: 1.25rem;
+    box-shadow: 0 8px 22px rgba(32, 41, 50, 0.08);
+    overflow: hidden;
+    transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.skills-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #434343, #9a9a9a);
+}
+
+.skills-card:hover {
+    transform: translateY(-6px);
+    border-color: #b4b4b4;
+    box-shadow: 0 14px 30px rgba(32, 41, 50, 0.14);
+}
+
+.skills-card .icon {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.65rem;
+    margin-bottom: 1rem;
+    border-radius: 0.9rem;
+    background: #f3f5f7;
+    cursor: default;
+}
+
+.skills-card h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #252525;
+}
+
+.skills-list {
+    display: grid;
+    gap: 0.65rem;
+    padding: 0;
+    list-style: none;
+}
+
+.skills-list li {
+    position: relative;
+    padding-left: 1.2rem;
+    color: #5c5c5c;
+    font-size: 0.94rem;
+    line-height: 1.45;
+}
+
+.skills-list li::before {
+    content: "";
+    position: absolute;
+    top: 0.52rem;
+    left: 0;
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 50%;
+    background: #555;
+}
+
+@media screen and (max-width: 900px) {
+    #skills {
+        margin: 2rem 2rem 0;
+        padding: 3rem 1.5rem;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #skills {
+        margin: 1rem;
+        padding: 2.5rem 1rem;
+        border-radius: 1.25rem;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* FINAL THANK-YOU SECTION */
+
+#thank-you {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  margin-top: 2rem;
+  border-radius: 2rem 2rem 0 0;
+  background: rgb(53, 53, 53);
+  color: white;
+  text-align: center;
+}
+
+.thank-you-content {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+}
+
+#thank-you p {
+  color: rgb(230, 230, 230);
+}
+
+#thank-you .title {
+  font-size: clamp(3rem, 8vw, 6rem);
+}
+
+#thank-you .btn {
+  margin-top: 0.5rem;
+  text-decoration: none;
+}

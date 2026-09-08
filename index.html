@@ -6,17 +6,31 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <script>
+        window.tailwind = {
+            config: {
+                theme: {
+                    extend: {
+                        colors: {
+                            ink: "#252525",
+                            mist: "#f1f4f7"
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <nav id="desktop-nav">
         <div class="logo">Sasina Ouansi</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
+                
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+              
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -30,11 +44,8 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>   
             </div>                
         </div>
@@ -81,153 +92,6 @@
         alt="Back to Top"
         />
     </a>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class ="section__container">
-        </div>
-        <div class="about-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <img 
-                    src="./assets/icon-experience.png"
-                    alt="Experience icon"
-                    class="icon"
-                    />
-                    <h3>Experience</h3>
-                    <p>4+ years <br />Administrative Officer</p>
-                </div>
-                <div class="details-container">
-                    <img
-                    src="./assets/open-book.png"
-                    alt="Education icon"
-                    class="icon"
-                    />
-                    <h3>Education</h3>
-                    <p>Burapha University Sakaeo Campus<br />Chanthaburi Technical College</p>
-                </div>
-              </div>
-              <div class="text-container">
-                <p>
-                   I am currently a transfer program student in Information Technology and Business Innovation at Burapha University Sakaeo Campus, while also working full-time. This experience has strengthened my responsibility, adaptability, and time management skills. I am passionate about Information Technology, especially in Front-end Developer and UX/UI Design, and I created this portfolio to showcase my Projects and my learning journey. For more details about my technical abilities, please visit the Skills page, and for more background information, see the Experience section. I am currently seeking a cooperative education opportunity to gain real-world experience and further develop my IT career.
-                </p>
-              </div>
-            </div>
-        </div>
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-            <div class="experience-container">
-                <div class="experience-card">
-                    <article>
-                        <h2 class="experience-sub-title">Internship Experience</h2>
-                        <div>
-                          <h3>7-Eleven employees - 7-Eleven</h3>
-                          <p>(November 2019 - February 2020)</p>
-                          <ul class="experience-list">
-                            <li>Provided customer service and assisted in daily store operations.</li>
-                            <li>Managed product stock and point-of-sale system with accuracy.</li>
-                            <li>Collaborated with team members to ensure smooth store workflow.</li>
-                            <li>Developed problem-solving skills in real-time situations.</li>
-                          </ul>
-                          </div>
-                    </article>
-                </div>
-                <div class="experience-card">
-                    <article>
-                        <h2 class="experience-sub-title">Work Experience</h2>
-                        <div>
-                          <h3>Administrative Officer - Sakaeo Rural Road Office</h3>
-                          <p>(August 2021 - Present)</p>
-                            <ul class="experience-list">
-                             <li>Prepared internal and external documents, monthly budget reports, and procurement records.</li>
-                             <li>Handled employment paperwork and construction project documentation.</li>
-                             <li>Utilized Microsoft Office and Google Workspace for data and document management.</li>
-                             <li>Strengthened attention to detail, time management, and cross-team communication.</li>
-                            </ul>
-                        </div>
-                    </article> 
-                </div>
-                <div class="experience-card">
-                    <article>
-                        <h2 class="experience-sub-title">Work Experience</h2>
-                        <div>
-                          <h3>Part-time Staff - Restaurant </h3>
-                          <p>(2018 - 2020)</p>
-                            <ul class="experience-list">
-                             <li>Assisted customers, managed orders, and served food efficiently.</li>
-                             <li>Worked collaboratively with team members during peak hours.</li>
-                             <li>Enhanced communication and quick problem-solving skills.</li>
-                            </ul>
-                            </div> 
-                    </article> 
-                </div>
-                <div class="experience-card">
-                    <article>
-                        <h2 class="experience-sub-title">Work Experience</h2>
-                        <div>
-                          <h3>Part-time Staff - Hotel </h3>
-                          <p>(2017 - 2019)</p>
-                            <ul class="experience-list">
-                             <li>Welcomed and assisted both local and international guests.</li>
-                             <li>Gained strong communication skills and handled unexpected issues effectively.</li>
-                             <li>Learned to work systematically and maintain high service standards.</li>
-                            </ul>
-                        </div>
-                    </article>         
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="education">
-        <p class="section__text__p1">My Education</p>
-        <h1 class="title">Education</h1>
-        <div class="education-container">
-            <div class="education-card">
-                <article>
-                    <img
-                    src="./assets/Logo-Burapha_University.png"
-                    alt="education 1"
-                    class="education-pic"
-                    />
-                    <h2 class="education-sub-title">Burapha University Sakaeo Campus</h2>
-                    <h3>Bachelor of Science and Social Science (B.Sc.)</h3>
-                    <h3>Technology and Business Innovation</h3>
-                    <h3>GPAX: 3.23</h3> 
-                    <p>(2023-Present)</p>
-                </article>
-            </div>
-            <div class="education-card">
-                <article>
-                    <img
-                    src="./assets/Logo-Technical-Chanthaburi.png"
-                    alt="education 2"
-                    class="education-pic"
-                    />
-                    <h2 class="education-sub-title">Chanthaburi Technical College</h2>
-                    <h3>Vocational Certificate in Commerce</h3>
-                    <h3>Program Marketing</h3>
-                    <h3>GPA: 3.22</h3> 
-                    <p>(2018-2021)</p>
-                </article>
-            </div>
-            <div class="education-card">
-                <article>
-                    <img
-                    src="./assets/Logo-Technical-Sakeao.png"
-                    alt="education 3"
-                    class="education-pic"
-                    />
-                    <h2 class="education-sub-title">Sakaeo Technical College</h2>
-                    <h3>Vocational Certificate in Commerce</h3>
-                    <h3>Program Marketing</h3> 
-                    <p>(2017-2018)</p>
-                </article>
-            </div>
-        </div>
-    </section>
 
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
@@ -307,94 +171,35 @@
         </div>
     </section>
 
-    <section id="skills">
-        <p class="section__text__p1">My Skills</p>
-        <h1 class="title">Skills</h1>
-        <div class="skills-container">
-            <div class="skills-card">
-                <img 
-                src="./assets/icons8-microsoft-word-48.png"
-                alt="skills icon1"
-                class="icon"
-                />
-                <h2>Microsoft Word</h2>
-                <ul class="skills-list">
-                    <li>Typing documents, reports, articles and official documents</li>
-                    <li>Formatting text such as bold, italic, underline, and paragraph alignment</li>
-                    <li>Inserting images and tables into the document</li>
-                </ul> 
-            </div>
-            <div class="skills-card">
-                <img 
-                src="./assets/icons8-microsoft-excel-48.png"
-                alt="skills icon2"
-                class="icon"
-                />
-                <h2>Microsoft Excel</h2>
-                <ul class="skills-list">
-                    <li>Create tables and record data in rows and columns</li>
-                    <li>Use formulas and functions (SUM, AVERAGE, IF, VLOOKUP)</li>
-                    <li>Generate charts and graphs to visualize data</li>
-                    <li>Manage small to medium-sized databases (customer lists, employee records)</li>
-                    <li>Perform regression analysis to study relationships between variables</li>
-                    <li>Create PivotTables to summarize and analyze data</li>
-                </ul> 
-            </div>
-            <div class="skills-card">
-                <img 
-                src="./assets/icons8-microsoft-powerpoint-48.png"
-                alt="skills icon3"
-                class="icon"
-                />
-                <h2>Microsoft Power Point</h2>
-                <ul class="skills-list">
-                    <li>Create slides for presentations</li>
-                    <li>Add text, images, videos, and audio</li>
-                    <li>Apply animations and transitions</li>
-                    <li>Export as PDF or video for distribution</li>
-                </ul> 
-            </div>
-            <div class="skills-card">
-                <img 
-                src="./assets/icons8-canva-48.png"
-                alt="skills icon4"
-                class="icon"
-                />
-                <h2>Canva</h2>
-                <ul class="skills-list">
-                    <li>Create & Design (presentations, Resume, Poster)</li>
-                </ul> 
-            </div>
-            <div class="skills-card">
-                <img 
-                src="./assets/icons8-visual-studio-code-48.png"
-                alt="skills icon5"
-                class="icon"
-                />
-                <h2>Visual Studio Code</h2>
-                <ul class="skills-list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>PHP</li>
-            </div>
-            <div class="skills-card">
-                <img 
-                src="./assets/icons8-figma-48.png"
-                alt="skills icon6"
-                class="icon"
-                />
-                <h2>Figma</h2>
-                <ul class="skills-list">
-                    <li>Design System</li>   
-                </ul> 
-            </div>
+    <section id="certificates">
+        <p class="section__text__p1">My Achievements</p>
+        <h1 class="title">Certificates</h1>
+        <div class="certificate-container">
+            <article class="certificate-card">
+                <div class="certificate-placeholder" aria-label="Certificate image placeholder">Certificate Image</div>
+                <h2 class="certificate-title">Certificate Title</h2>
+                <p>Certificate description goes here.</p>
+            </article>
+            <article class="certificate-card">
+                <div class="certificate-placeholder" aria-label="Certificate image placeholder">Certificate Image</div>
+                <h2 class="certificate-title">Certificate Title</h2>
+                <p>Certificate description goes here.</p>
+            </article>
         </div>
     </section>
 
     <section id="contact">
         <p class="section__text__p1">My Contact</p>
         <h1 class="title">Contact</h1>
+    </section>
+
+    <section id="thank-you">
+        <div class="thank-you-content">
+            <p class="section__text__p1">Portfolio of Sasina Ouansi</p>
+            <h1 class="title">THANK YOU</h1>
+            <p>Thank you for visiting my portfolio.</p>
+            <a class="btn btn-color-1" href="#profile">Back to Top</a>
+        </div>
     </section>
 
     <script src="script.js"></script>
