@@ -60,7 +60,9 @@ section {
   .education-container { grid-template-columns:1fr; }
   #education { padding-left:0; padding-right:0; }
   #certificates { margin:1rem; padding:2.5rem 1rem; border-radius:1.25rem; }
-  .certificate-placeholder { min-height:190px; }
-  #projects .details-container img { width:min(100%,280px); height:auto; aspect-ratio:5 / 7; margin:0 auto; }
-  #back-to-top { width:42px; height:42px; right:12px; bottom:12px; }
+  .certificate-placeholder { border: none; }
 }
+  #projects .details-container img { width:min(100%,300px); height:auto; aspect-ratio:5 / 7; margin:0 auto; }
+  #back-to-top { width:42px; height:42px; right:12px; bottom:12px; }
+
+

@@ -487,27 +487,25 @@ section {
     background: rgb(250, 250, 250);
 }  
 
-.project-img {
-    border-radius: 2rem;
-    width: 90%;
-    height: 90%;
-}
 
-.project-img {
-    margin: 1rem;
-    color: black;
-}
-
-.projects-btn {
-    color: black;
-    border-color: rgb(163, 163, 163);
-}
 
 #projects .details-container img {
-  width: 250px;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 10px;
+    width: 100%;             /* ปรับความกว้างให้เต็ม 100% ของกล่อง */
+    height: auto;            /* ให้ความสูงปรับตามอัตราส่วนของภาพอัตโนมัติ */
+    max-height: 300px;       /* (Optional) กำหนดความสูงไม่ให้เกินตามต้องการ */
+    object-fit: cover;       /* ช่วยให้รูปตัดขอบพอดีกล่อง โดยที่รูปไม่เบี้ยว */
+    border-radius: 2rem;   /* (Optional) ใส่ความโค้งมนของขอบรูป */
+}
+
+
+
+.project-card {
+  padding: 1.5rem;
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 1.5rem;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 22px 22px rgba(32, 41, 50, 0.08);
 }
 
 #projects .about-containers {
@@ -557,7 +555,7 @@ section {
   display: grid;
   place-items: center;
   min-height: 230px;
-  border: 2px dashed rgb(163, 163, 163);
+  border: none;
   border-radius: 1rem;
   color: rgb(85, 85, 85);
   background: rgb(250, 250, 250);
